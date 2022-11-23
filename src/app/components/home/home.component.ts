@@ -12,7 +12,7 @@ import { AddexpenseComponent } from '../addexpense/addexpense.component';
   animations: []
 })
 export class HomeComponent implements OnInit {
-
+  addFormOpen = false
   currMonthExpenses : any
   month = 0
   formData : any
@@ -28,13 +28,15 @@ export class HomeComponent implements OnInit {
   }
 
   openDialog() {
+    this.addFormOpen = true
     const dialogRef = this.dialog.open(AddexpenseComponent, {
       width : '50%'
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
-    });
+      this.addFormOpen = false
+  });
   }
 }
 
