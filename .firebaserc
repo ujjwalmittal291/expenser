@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "expenser-25092022": {
+      "hosting": {
+        "expenser": [
+          "expenser-25092022"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "expenser-25092022"
+  }
+}
