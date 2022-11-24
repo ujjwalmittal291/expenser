@@ -17,13 +17,17 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { AxComponent } from './components/ax/ax.component';
+import { MenubarComponent } from './components/menubar/menubar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AddexpenseComponent
+    AddexpenseComponent,
+    AxComponent,
+    MenubarComponent
   ],
   // exports:[
   //   MatTabsModule
@@ -38,6 +42,10 @@ import { MatButtonModule } from '@angular/material/button';
     MatDialogModule,
     BrowserAnimationsModule,
     MatButtonModule
+  ],
+  exports: [
+    MatTabsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

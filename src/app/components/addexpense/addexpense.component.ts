@@ -10,7 +10,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
 export class AddexpenseComponent implements OnInit {
 
   constructor(
-    public dialog: MatDialog
+    // public dialog: MatDialog
     ) { }
 
   ngOnInit(): void {
