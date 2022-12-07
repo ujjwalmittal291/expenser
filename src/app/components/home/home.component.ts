@@ -22,30 +22,7 @@ export class HomeComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    // this.month = new Date().getMonth() + 1
-    this.currMonthExpenses = this.dbService.getMonthlyData(new Date().getMonth() + 1)
-    // this.dbService.addExpense(this.formData)
   }
 
-  openDialog() {
-    this.addFormOpen = true
-    const dialogRef = this.dialog.open(AddexpenseComponent, {
-      width : '50%'
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-      this.addFormOpen = false
-  });
-  }
 }
-
-
-
-  // Implementing PolicyDetails interface from data.model
-  // formData: expenseFormat = {
-  //   account : "Personal",
-  //   timeStamp : ''
-  // }
-
 

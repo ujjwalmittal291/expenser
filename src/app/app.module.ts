@@ -13,11 +13,6 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
 import { AddexpenseComponent } from './components/addexpense/addexpense.component'
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatDialogModule } from '@angular/material/dialog';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
-import { AxComponent } from './components/ax/ax.component';
 import { MenubarComponent } from './components/menubar/menubar.component';
 
 
@@ -26,7 +21,6 @@ import { MenubarComponent } from './components/menubar/menubar.component';
     AppComponent,
     HomeComponent,
     AddexpenseComponent,
-    AxComponent,
     MenubarComponent
   ],
   // exports:[
@@ -38,14 +32,8 @@ import { MenubarComponent } from './components/menubar/menubar.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAnalyticsModule,
-    MatTabsModule,
-    MatDialogModule,
-    BrowserAnimationsModule,
-    MatButtonModule
   ],
   exports: [
-    MatTabsModule,
-    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
